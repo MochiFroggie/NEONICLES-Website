@@ -6,8 +6,14 @@
     text-decoration: none;
 }
 
+body {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .navbar {
-    background: #290423;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -16,6 +22,8 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    background: #290423;
+    opacity: 70%;
 }
 
 .navbar__container {
@@ -197,7 +205,6 @@
 
 /* Hero Section CSS */
 .main {
-    background-color: #290423;
 }
 
 .main__container {
@@ -207,7 +214,6 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #290423;
     z-index: 1;
     width: 100%;
     max-width: 1400px;
@@ -318,6 +324,7 @@
 #main__img {
     height: 80%;
     width: 80%;
+    border-radius: 14px;
 }
 
 /* Mobile Responsive */
@@ -408,7 +415,6 @@
 
 /* Services Section CSS */
 .services {
-    background: #290423;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,7 +443,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 14px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/pic3.jpg');
     background-size: cover;
     position: relative;
@@ -448,7 +454,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 14px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/pic4.jpg');
     background-size: cover;
     position: relative;
@@ -459,7 +465,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 14px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/pic5.jpg');
     background-size: cover;
     position: relative;
@@ -470,7 +476,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 14px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/pic6.jpg');
     background-size: cover;
     position: relative;
@@ -481,7 +487,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 14px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/pic4.jpg');
     background-size: cover;
     position: relative;
@@ -499,7 +505,7 @@
     padding: 10px 20px;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 14px;
     background-color: #f77062;
     position: absolute;
     top: 440px;
@@ -508,12 +514,20 @@
     cursor: pointer;
 }
 
+.services__card h1 {
+    margin: 1rem;
+}
+
+.services__card--two h1 {
+    margin: 1rem;
+}
+
 .services__card--two button {
     color: #fff;
     padding: 10px 20px;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 14px;
     background-color: #f77062;
     position: absolute;
     top: 440px;
@@ -565,12 +579,13 @@
 
 /* Footer CSS */
 .footer__container {
-    background-color: #290423;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #000313;
+    background-image: linear-gradient(to top, #000313 0%, #000313 0%, #000313 21%, #000313 52%, #000313 78%, #440046 100%);
 }
 
 #footer__logo {
