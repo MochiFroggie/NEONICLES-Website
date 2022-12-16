@@ -94,7 +94,7 @@
 
 .button:hover {
     background: #740606;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Adds a small little color changing hover effect*/
 }
 
 .navbar__links:hover {
